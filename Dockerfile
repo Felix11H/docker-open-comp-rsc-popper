@@ -12,6 +12,3 @@ RUN pip install numpy scipy matplotlib sumatra gitpython configparser
 RUN git config --global core.fileMode false
 
 RUN pip install popper
-
-RUN useradd -ms /bin/bash docker
-USER docker
