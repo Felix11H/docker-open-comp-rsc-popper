@@ -1,6 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER felix11h.dev@gmail.com
 
+
 USER root
 
 RUN apt-get -qy update
@@ -12,3 +13,6 @@ RUN pip install numpy scipy matplotlib sumatra gitpython configparser
 RUN git config --global core.fileMode false
 
 RUN pip install popper
+
+RUN useradd -ms /bin/bash docker
+
