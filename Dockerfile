@@ -4,7 +4,7 @@ MAINTAINER felix11h.dev@gmail.com
 USER root
 
 RUN apt-get -qy update
-RUN apt-get install -qy apt-utils python python-dev python-pip git screen 
+RUN apt-get install -qy apt-utils python python-dev python-pip git screen wget
 
 RUN pip install --upgrade pip
 RUN pip install numpy scipy matplotlib sumatra gitpython configparser
